@@ -1,0 +1,260 @@
+/* General Styles */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    width: 97%;
+    margin: 20px;
+}
+
+/* Barra de Navegación */
+nav {
+    background-color: #b1aadd;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #cdc5ff;
+    color: white;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.social-icons a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #cdc5ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #cdc5ff;
+}
+
+/* Formulario de Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+form input, form textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 2px solid #cdc5ff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #cdc5ff;
+}
+
+
+button {
+    background-color: #ffffff;
+    color: #111;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9c92db;
+}
+
+/* Efecto interactivo */
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #9c92db; }
+    50% { box-shadow: 0 0 20px #786eb8; }
+    100% { box-shadow: 0 0 10px #9c92db; }
+}
+
+button:hover {
+    animation: glow 1s infinite alternate;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cdc5ff;
+    color: white;
+}
+
+
+/* juegos */
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.more-info {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-info:hover {
+    background-color: #333;
+    color: #fff;
+}
+
